@@ -1,0 +1,6 @@
+:root {
+    --accentColorMuted: hsl(300, 40%, 40%);
+}
+a {
+    color: var(--accentColorMuted);
+}
