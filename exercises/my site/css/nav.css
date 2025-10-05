@@ -1,0 +1,44 @@
+.nav a {
+    color: var(--navColor);
+    padding: 0 .35em;
+    background: transparent;
+    min-width: 100%;
+    text-decoration: none;
+}
+
+.app-nav {
+    background-color: var(--bgColor);
+}
+
+.app-nav {
+    width: 16em;
+    background-color: var(--bgColor);
+    width: 16em;
+    position: static;
+    overflow: hidden;
+    will-change: width;
+}
+
+.nav {
+    list-style: none;
+    margin: 0 0 1em;
+    padding: 0 0 0 1em;
+    min-width: 16em;
+}
+
+
+.nav a:hover {
+    color: var(--accentColor);
+    text-decoration: underline;
+}
+
+.app-nav-header {
+    height: 5em;
+    padding: 0 1.4em;
+}
+
+.app-nav-header--title {
+    color: var(--navColor);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}

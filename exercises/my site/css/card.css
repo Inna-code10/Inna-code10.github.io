@@ -1,0 +1,60 @@
+.card {
+    min-width: 0;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid var(--muteColor);
+    position: relative;
+}
+
+.card-figure {
+    width: 100%;
+    min-width: 0;
+    position: relative;
+}
+
+.card-figure .icons {
+    position: absolute;
+    top: 3rem;
+    right: 1.5rem;
+    z-index: -10;
+
+}
+
+.card-figure:hover .icons {
+    z-index: 10;
+}
+
+.card-figure .icons a {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    background-color: white;
+    color: var(--navColor);
+}
+
+.card-figure .icons a:hover {
+    color: var(--accentColor);
+    background-color: var(--muteColor);
+}
+
+/* 
+.product-container {
+    position: relative;
+
+} */
+.card-badge::before {
+    background-color: red;
+    color: white;
+    content: "New";
+    position: absolute;
+    top: .5rem;
+    right: -1.8rem;
+    width: 6em;
+    text-align: center;
+    z-index: 2;
+    transform: rotate(45deg);
+}

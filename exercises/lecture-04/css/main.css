@@ -1,0 +1,50 @@
+:root {
+    font-family: "Roboto", sans-serif;
+    /*font-size: 100%*/
+}
+
+body {
+   /* font: size 140%;*/
+   /* font-size: 16 px;*/
+   font-family: Roboto; 
+   font-size: 1rem;
+}
+
+h1 {
+    /*font-size:240%;*/
+}
+
+h1, h2, h3 {
+    color: grey;
+    font-weight: 700;
+}
+
+#main {
+    color: #e60202;
+}
+
+.h2 {
+    color: red;
+    font-size: 1.3rem;
+}
+
+
+
+.heading {
+    color: green;
+}
+
+#outer {
+    font-size: 25.6px;
+}
+#inner {
+    font-size: 40.96px;
+}
+
+.list-unstyled {
+   list-style: none
+}
+
+.footer-social {
+    
+}
