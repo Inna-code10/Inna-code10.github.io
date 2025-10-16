@@ -33,3 +33,63 @@ body {
 .footer {
     grid-area: footer;
 }
+
+/* Початок завдань 1-5 по пунктам */
+/* Мінімальний шрифт 16px, при 768px дорівнює 20px, максимум 24px */
+body {
+    font-size: clamp(16px, calc(16px + (20 - 16) * ((100vw - 320px) / (768 - 320))), 24px);
+}
+
+body {
+    font-size: clamp(16px,
+            /* мінімальний розмір шрифту */
+            calc(16px + (24 - 16) * ((100vw - 768px) / (1200 - 768))),
+            /* адаптивне масштабування */
+            24px
+            /* максимальний розмір шрифту */
+        );
+}
+
+:root {
+    --min-font-size: 18px;
+    /* мінімальний розмір шрифту */
+    --max-font-size: 36px;
+    /* максимальний розмір шрифту при 1920px */
+    --min-width: 320;
+    /* мінімальна ширина екрану */
+    --max-width: 1920;
+    /* ширина екрану для max-font-size */
+}
+
+h1 {
+    font-size: clamp(var(--min-font-size),
+            calc(var(--min-font-size) + (var(--max-font-size) - var(--min-font-size)) * ((100vw - var(--min-width)px) / (var(--max-width) - var(--min-width)))),
+            var(--max-font-size));
+}
+
+body {
+    font-size: clamp(16px, calc(1rem + 1vw), 22px);
+}
+
+body {
+    font-size: clamp(16px, calc(1rem + 1vw), 22px);
+}
+/*Кінць завдань 1-5 по пунктам*/
+
+body {
+    font-size: clamp(16px,
+    calc(20px + (36 - 20) * ((100vw - 768px) / (1920 - 768))),
+            48px
+        );
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+    }
+}
