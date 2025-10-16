@@ -1,0 +1,77 @@
+.body {
+    /* Лінійний градієнт, спрямований вправо (90 градусів) */
+    background: linear-gradient(90deg,
+            #b6fcb6 5%,
+            /* світло-зелений на 5% */
+            #9ff49f 17%,
+            /* трохи темніший зелений на 17% */
+            #7ce07c 40%,
+            /* середньо-зелений на 40% */
+            #57c857 85%,
+            /* темно-зелений на 85% */
+            #328232 95%
+            /* дуже темний зелений на 95% */
+        );
+
+    /* Додаткові стилі для плавного заповнення екрану */
+    min-height: 100vh;
+    /* переконуємося, що body займає всю висоту екрану */
+    margin: 0;
+}
+
+
+.negative {
+    /* Лінійний градієнт направлений вліво */
+    background: linear-gradient(to left,
+            #add8e6 -50%,
+            /* світлосиній */
+            #87ceeb -10%,
+            /* трохи темніший світлосиній */
+            #4682b4 0%,
+            /* середній синій */
+            #1e3f66 100%,
+            /* темний синій */
+            #0b1f3a 150%
+            /* дуже темний синій */
+        );
+    /* Додаткові стилі для гарного відображення */
+    padding: 20px;
+    color: white;
+}
+
+
+.percents {
+    /* Встановлюємо висоту контейнера за потреби */
+    height: 200px;
+    width: 100%;
+
+    /* Лінійний градієнт по вертикалі (to bottom) з кількома точками зупинки */
+    background: linear-gradient(to bottom,
+            #b2f2b2 0em,
+            /* світлозелений для початку */
+            #a3eaa3 2em,
+            #94e294 4em,
+            #85d985 8em,
+            #77ce77 16em,
+            #69c569 32em,
+            #5bbf5b 64em,
+            #4caf4c 128em
+            /* темнозелений для кінця */
+        );
+    /* Додаємо для гарної адаптивності */
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+        .radial {
+            width: 100%;
+            /* приклад ширини елементу */
+            height: 100%;
+            /* приклад висоти елементу */
+            background-image:
+                radial-gradient(ellipse at center top, orange, transparent),
+                radial-gradient(ellipse at center bottom, red, transparent);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* або adjust за потребою */
+        }
