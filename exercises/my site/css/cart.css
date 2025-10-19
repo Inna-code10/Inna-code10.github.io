@@ -1,0 +1,67 @@
+.table {
+    width: 100%;
+    text-align: start;
+    border-collapse: collapse;
+
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid #DADADA;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .08);
+}
+
+.table thead {
+    background-color: hsla(0, 0%, 0%, .075);
+}
+
+.table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    flex-flow: row nowrap;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+}
+
+.table tbody tr:hover {
+    background-color: hsla(0, 0%, 0%, .075);
+}
+
+.table tr td,
+.table tr th {
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    padding: 8px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.table tr td:first-child {
+    justify-content: start;
+    padding-left: 1em;
+}
+
+.table tr td:last-child {
+    justify-content: end;
+    padding-right: 1em;
+}
+
+.cart-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart-main {
+    padding: .5rem;
+    flex: 3;
+}
+
+.cart-aside {
+    padding: .5rem;
+    flex: 1;
+}

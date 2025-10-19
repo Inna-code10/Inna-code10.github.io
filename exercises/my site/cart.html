@@ -1,11 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart page</title>
+    <title>Cart page</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <h1>Your cart</h1>
+
+    <div class="app">
+        <aside class="app-nav">
+            <header class="app-nav-header">
+                <span class="app-nav-header--title">Navigation</span>
+            </header>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </aside>
+        <main class="app-main">
+            <header class="app-main-header">
+                <div class="app-main-header--logo">
+                    <span class="app-main-header--logo-emphasis">Super pretty store</span> 
+                </div>
+                <nav class="app-main-header--links">
+                    <a href="cart.html"><i class="fa-regular fa-user"></i></a>
+                    <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+                    <a href="cart.html"><i class="fa-regular fa-heart"></i></a>
+                </nav>
+            </header>
+
+            <section id="hero" class="hero bg-cover bg-center py-4 px-4"
+                style="background-image: url(images/bg-banner.jpg);">
+                <div class="container">
+                    <p>New Inspiration 2025</p>
+                    <h1>20% off on new season</h1>
+                    <a href="" class="btn btn-hero">Browse collection</a>
+                </div>
+
+            </section>
+
+            <div class="app-main-content">
+                <div class="app-content">
+                    <article>
+                        <section>
+                            <div class="cart-container">
+
+                                <div class="cart-main">
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Quantity</th>
+                                                <th scope="col">Total</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>iPhone 15 Pro</td>
+                                                <td>1200 &euro;</td>
+                                                <td>2</td>
+                                                <td>2400&euro;</td>
+                                                <td><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Apple watch S 10</td>
+                                                <td>500&euro;</td>
+                                                <td>2</td>
+                                                <td>1000&euro;</td>
+                                                <td><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dyson</td>
+                                                <td>600&euro;</td>
+                                                <td>1</td>
+                                                <td>600&euro;</td>
+                                                <td><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>TV Samsung</td>
+                                                <td>1000&euro;</td>
+                                                <td>1</td>
+                                                <td>1000&euro;</td>
+                                                <td><i class="fas fa-trash-alt"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div class="cart-aside">
+                                    <h3>Cart total</h3>
+                                    <button>Checkout</button>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+            <section id="hero" class="hero bg-cover bg-center py-8 px-4 bg-attachment"
+                style="background-image: url(images/divider-bg.jpg);">
+                <div class="container divider">
+                    <p>Summer 2025</p>
+                    <h1>Fashion Collection</h1>
+                    <a href="" class="btn btn-hero">Browse collection</a>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- footer start -->
+    <footer class="footer">
+        <section class="footer-main">
+            <div class="footer-main-item">
+                <h3 class="footer-title">About</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-main-item">
+                <h3 class="footer-title">Contacts</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-main-item">
+                <h3 class="footer-title">Resources</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="footer-social">
+            <div class="footer-social-list">
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-google"></a>
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-google"></a>
+            </div>
+        </section>
+
+        <section class="footer-legal">
+            <ul class="footer-legal-list">
+                <li>
+                    <a href="#">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                    <a href="#">Privacy policy</a>
+                </li>
+                <li>
+                    &copy; 2025 Copyright My company
+                </li>
+            </ul>
+
+        </section>
+
+
+    </footer>
+    <!-- footer end -->
+
 </body>
+
 </html>

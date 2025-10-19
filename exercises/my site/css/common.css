@@ -19,7 +19,7 @@ h3 {
 }
 
 .bg-center {
-    background-position: center;
+    background-position: top 700;
 }
 
 .bg-attachment {
@@ -54,9 +54,6 @@ body {
     padding-right: 2rem;
 }
 
-.app {
-    min-height: 100vh;
-}
 
 img {
     display: block;
@@ -97,6 +94,57 @@ a {
     -webkit-text-fill-color: transparent;
 }
 
-.card .icons a {
-    text-decoration: none;
+.app {
+    min-height: 100vh;
+    display: flex;
+}
+
+.app-main {
+    background-color: var(--muteColor);
+    display: flex;
+    flex-flow: column;
+    min-width: 0%;
+    flex: 1 1 0%;
+}
+
+.app-main-header {
+    border-top: 1px solid var(--accentColor);
+    border-bottom: 1px solid hsla(0, 0%, 0%, .075);
+    height: 5em;
+    padding: 0 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.app-main-header--logo {
+    font-weight: 700;
+    margin: 0;
+    max-width: 100%;
+    word-spacing: .2em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px hsla(0 0% 0% / .08);
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+    flex: 1;
+}
+
+.app-main-header--logo-emphasis {
+    margin-right: .2em;
+    color: var(--accentColor);
+}
+
+.app-main-header--links {
+    display: flex;
+    align-items: center;
+}
+
+.app-main-header--links a {
+    margin-left: 1.25em;
+    color: var(--textColor);
+
+}
+
+.to-rigth {
+    text-align: right;
 }

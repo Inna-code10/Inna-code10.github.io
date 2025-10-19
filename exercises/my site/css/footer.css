@@ -1,0 +1,49 @@
+.footer {
+    background-color: var(--bgColor);
+    color: var(--muteColor);
+    width: 100%;
+
+}
+
+.footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer a {
+    color: var(--navColor);
+}
+
+.footer a:hover {
+    color: var(--accentColor);
+}
+
+.footer-main {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.footer-social {
+    padding: 1rem 2rem;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-social-list a {
+    margin: .5rem;
+}
+
+.footer-legal {
+    padding: 1rem 2rem;
+}
+
+
+.footer-legal-list {
+    display: flex;
+    justify-content: space-evenly;
+}
