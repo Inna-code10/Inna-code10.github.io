@@ -20,20 +20,79 @@
 }
 
 
-.app-nav {
+/* Використовуйте функцію медіа max-width, щоб застосовувати стилі до об’єктів шириною менше певної величини: */
+@media (max-width: 400px) {
+    /* Styles for viewports narrower than 400 pixels. */
+}
 
-    flex: 0 0 auto;
+@media (width <=400px) {
+    /* Styles for viewports narrower than 400 pixels. */
+}
+
+/* 
+@media (max-width: 786px) {
+    .app-nav {
+        position: absolute;
+        left: -16em;
+        top: 0;
+        bottom: 0;
+    }   
+} */
+/* @media (width <= 786px) {
+    .app-nav {
+        position: absolute;
+        left: -16em;
+        top: 0;
+        bottom: 0;
+    }   
+} */
+
+.app-nav {
+    /* flex: 0 0 auto; */
     background-color: var(--bgColor);
     width: 16em;
-    position: static;
-    overflow: hidden;
-    will-change: width;
+    /* position: static; */
+    /* overflow: hidden; */
+    /* will-change: width; */
+}
+
+@media (width < 50em) {
+    .app-nav {
+        position: absolute;
+        left: -16em;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+/* 
+@media (min-width: 787px) {
+    .app-nav {
+        flex: 0 0 auto;
+        width: 16em;
+        position: static;
+        overflow: hidden;
+        will-change: width;
+    }   
+} */
+
+@media (min-width: 50em) {
+    .app-nav {
+        flex: 0 0 auto;
+        width: 16em;
+        position: static;
+        overflow: hidden;
+        will-change: width;
+    }
 }
 
 .app-nav-header {
     height: 5em;
     padding: 0 1.4em;
     display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .app-nav-header--title {
@@ -42,6 +101,64 @@
     letter-spacing: .2em;
 }
 
+/* 
 .app-nav--show {
     display: none;
+} */
+
+/* 
+
+.app-nav--hide {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: -16em;
+    transform: translate3d(0%, 0, 0);
+} */
+
+
+.hamburger {
+    display: flex !important;
+    /* opacity: 0 !important; */
 }
+
+.app-nav--show {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    left: 0rem;
+    padding: 0 1rem;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.app-nav--show:hover {
+    color: var(--accentColor);
+    font-weight: 600;
+}
+
+@media (width > 50em) {
+    .app-nav--show {
+        display: none;
+        opacity: 0 !important;
+        /* left: -100rem; */
+        visibility: hidden;
+    }
+
+}
+
+/* 
+@media (min-width: 786px) {
+    
+    .app-nav--show {
+        display: none;
+        height: 100%;
+        align-items: center;
+        position: absolute;
+        top: 0%;
+    }   
+} */

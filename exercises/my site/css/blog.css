@@ -10,6 +10,10 @@
     grid-area: s;
     border-left: 1px dotted gray;
     background-color: hsla(110 80% 50% / 50%);
+    text-align: center;
+    padding: 0 1em;
+    font-size: 1.0rem;
+
 }
 
 .blog-main {

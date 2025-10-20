@@ -5,12 +5,21 @@
     --muteColor: hsl(0, 0%, 95%);
     --bgColor: hsl(0, 0%, 22%);
     --accentColor: hsl(300, 50%, 50%);
+    /* font-size: 1.2rem; */
+    line-height: 1.5;
+    /* font-size: 2.5vw; */
+    font-size: calc(0.75rem + .5vw);
+
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Arial', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
+}
+
+h1 {
+    font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
 }
 
 .bg-cover {
@@ -29,8 +38,7 @@ h3 {
 body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-size: 1.2rem;
-    line-height: 1.5;
+
     font-weight: 400;
     font-style: normal;
     color: var(--textColor);
@@ -103,9 +111,19 @@ a {
     background-color: var(--muteColor);
     display: flex;
     flex-flow: column;
-    min-width: 0%;
     flex: 1 1 0%;
 }
+
+/* 
+@media (min-width:50em) {
+    .app-main {
+        display: flex;
+        min-width: 0%;
+        flex-flow: column;
+        flex: 1 1 0%;
+    }   
+} */
+
 
 .app-main-header {
     border-top: 1px solid var(--accentColor);
@@ -114,6 +132,7 @@ a {
     padding: 0 1.4rem;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .app-main-header--logo {
@@ -127,6 +146,7 @@ a {
     white-space: nowrap;
     align-items: center;
     flex: 1;
+    margin-left: 1rem;
 }
 
 .app-main-header--logo-emphasis {

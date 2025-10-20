@@ -20,8 +20,13 @@
 
 .footer-main {
     display: flex;
-    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 5rem;
     justify-content: space-between;
+}
+
+.footer-main .footer-main-item {
+    margin: 1rem 2rem;
 }
 
 .footer-social {
@@ -46,4 +51,13 @@
 .footer-legal-list {
     display: flex;
     justify-content: space-evenly;
+}
+
+
+
+@media (width <=50em) {
+    .footer-legal-list {
+        display: block;
+        margin: 1em auto;
+    }
 }
